@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>drawpix</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body id="body">
+    <img id="vector" src="images/Vector.svg"></img> 
+    <header>
+        <div class="head">
+            <div class="header_logo">
+                <img src="images/drawpix logo.svg" alt="drawpix">
+                <p id="cg_development">CG DEVELOPMENT STUDIO</p>
+            </div>
+            <ul>
+                <li class="he"><a href="#Услуги">Услуги</a></li>
+                <li class="he"><button id="myBtn"><a>Карьера</a></button></li>
+                <li class="he"><a href="#О_нас">О нас</a></li>
+                <li class="he" id="client"><a href="#Клиенты">Клиенты</a></li>
+
+                <div class="line"></div>
+
+                <li id="artstation_logo">
+                    <span>Мы на</span> 
+                    <a href="https://drawpix.artstation.com/"><img src="images/artstationlogo1.svg" alt="artstation"></a> 
+                </li>
+            </ul>   
+        </div>
+    </header>
+
+    <input type="checkbox" id="hmt" class="hidden-menu-ticker">
+    <label class="btn-menu" for="hmt">
+      <span class="first"></span>
+      <span class="second"></span>
+      <span class="third"></span>
+    </label>
+    <ul class="hidden-menu">
+      <li><a href="#Услуги">Услуги</a></li>  
+      <li><button id="myBtn_three"><a>Карьера</a></button></li>
+      <li><a href="#О_нас">О нас</a></li>  
+      <li><a href="#Клиенты">Клиенты</a></li>  
+      <div class="dark_blue_line"></div>
+      <img id="arts" src="images/artstationlogo1.svg" alt="artstation">
+    </ul>
+
+    <div class="welcome">
+        <div class="wrapper">
+            <div class="main">
+                <h1>
+                    <nav>drawpix</nav> – CG Development студия
+                </h1>
+                    <div class="button">
+                        <button id="myBtn_two">
+                            <a>
+                                <div class="main_block">
+                                    <div class="text"><p>связаться с нами</p></div>
+                                </div>
+
+                                <div class="arrow">
+                                    <img src="images/Arrow 1.svg" alt="arrow">
+                                </div>
+                            </a>
+                        </button>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="myModal" class="modal">
+    
+     
+      <div class="modal-content">
+            <span class="close">&times;</span>
+            <h1>Свяжитесь с нами!</h1>
+            <p>Расскажите нам о себе и мы свяжемся с вами в ближайшее время</p>
+            <div class="contact_group">
+                <form 
+                action="https://formspree.io/f/mvolnvqp"
+                method="POST">
+            <label>
+                <input type="text" name="ФИО:" placeholder="ФИО">
+            </label>
+            <label>
+                <input type="email" name="Почта:" placeholder="Эл.Почта">
+            </label>
+            <label>
+                <textarea name="Сообщение:" placeholder="Расскажите о своём опыте и планах."></textarea>
+            </label>
+                <button type="submit">отправить сообщение</button>
+            </form>
+            </div>
+      </div>
+    
+    </div>
+
+    <div class="main_services">
+        <a name="Услуги"></a>
+        <div class="wrapper">
+            <h1>наши услуги</h1>
+            <div class="text">
+                <img id="square" src="images/Rectangle 42.svg" alt="квадрат">
+                <p>
+                    Мы ведем активную деятельность в сфере разработки игр, <br>
+                    создания образовательного контента, инжиниринге, портировании,<br> 
+                    создании компьютерной графики и анимации, 2D-концептов, а <br>
+                    также софта для VR и AR-платформ.
+                </p>
+            </div>
+
+            <div class="cards">
+                <div class="card">
+                    <img class="square_blue" src="images/Rectangle 43.png" alt="" srcset="">
+                    <p>уникальность</p>
+                    <img class="square_black" src="images/Rectangle 67.png" alt="" srcset="">
+                </div>
+                <div class="card">
+                    <img class="square_blue" src="images/Rectangle 43.png" alt="" srcset="">
+                    <p>инновационность</p>
+                    <img class="square_black" src="images/Rectangle 67.png" alt="" srcset="">
+                </div>
+                <div class="card">
+                    <img class="square_blue" src="images/Rectangle 43.png" alt="" srcset="">
+                    <p>креативность</p>
+                    <img class="square_black" src="images/Rectangle 67.png" alt="" srcset="">
+                </div>
+            </div>
+
+            <div class="blue_line"></div>
+
+            <div class="blocks">
+                <div class="block">
+                    <p>3D моделирование </p>
+                    <img id="model" src="images/Frame.svg" alt="">
+                    <div class="square__blue"></div>
+                    <div class="square__black"></div>
+                </div>
+                <div class="block">
+                    <p>cоздание 2D-артов </p>
+                    <img id="art" src="images/Group.svg" alt="">
+                    <div class="square__blue"></div>
+                    <div class="square__black"></div>
+                </div>
+                <div class="block">
+                    <p>AR/VR проекты</p>
+                    <img id="vr" src="images/Group(1).svg" alt="">
+                    <div class="square__blue"></div>
+                    <div class="square__black"></div>
+                </div>
+                <div class="block">
+                    <p>создание анимации</p>
+                    <img id="anim" src="images/Frame(1).svg" alt="">
+                    <div class="square__blue"></div>
+                    <div class="square__black"></div>
+                </div>
+                <div class="block">
+                    <p>разработка игр</p>
+                    <img id="game" src="images/bx_game.svg" alt="">
+                    <div class="square__blue"></div>
+                    <div class="square__black"></div>
+                </div>
+                <div class="block">
+                    <p>создание NFT</p>
+                    <img src="images/Frame(2).svg" alt="">
+                    <div class="square__blue"></div>
+                    <div class="square__black"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   
+
+        <div class="main_about">
+            <img id="pixels" src="images/Vector(5).svg">
+            <a name="О_нас"></a>
+            <div class="wrapper">
+                <div class="about">
+                    <h1>о нас</h1>
+                    <img id="squareblue" src="images/Rectangle 42.svg" alt="квадрат">
+                    <p>
+                        Наша команда стала еще лучше для вас <br>
+                        Будучи ранее кучкой разработчиков и <br>
+                        художников, мы вышли на новый качественный <br>
+                        уровень и можем смело называть себя студией <br>
+                        профессионалов. <br>
+                        Мы готовы с еще большим энтузиазмом создавать <br>
+                        для вас компьютерную графику, делать крутейшие <br>
+                        3D-модели, иллюстрации и концепт-арты для <br>
+                        ваших проектов. <br>
+                        Будьте с нами!
+                    </p>
+
+                    
+                    <h1 id="cl">наши клиенты <a name="Клиенты"></a></h1>
+                    
+                </div>
+            </div>
+                    <div class="logos">
+                        <img id="squarebluee" src="images/Rectangle 42.svg" alt="квадрат">
+                        <div class="logo f one nope"><img src="images/Logo_Hi-Rez_Black_1c 1.svg" alt="coldiron" width="300px"></div>
+                        <div class="logo s nope z"><img src="images/Logo_4A 1.svg" alt="4a"></div>
+                        <div class="logo f holo"><img src="images/hologate_hori_black 1(1).svg" alt="hologate"></div>
+                        <div class="logo s"><img src="images/Logo_CDPR 1.svg" alt="CDRP"></div>
+                        <div class="logo f remedy"><img src="images/Remedy_vertical_whit 1.svg" alt="remedy"></div>
+                        <div class="logo s z wa"><img src="images/wargaming-logo-A99FF 1.svg" alt="wargaming"></div>
+                        <div class="logo f qc"><img src="images/logo01-276x300 1.svg" alt="qcgames"></div>
+                        <div class="logo s"><img src="images/Logo_Hi-Rez_Black_1c 1(2).svg" alt="HiRez"></div>
+                    </div>
+        </div>
+
+    <footer>
+        <div class="links">
+                <div class="left">
+                    <li>
+                        <div class="header_logo">
+                        <img src="images/Group 587.svg" alt="drawpix">
+                        <p id="cg_development">CG DEVELOPMENT STUDIO</p>
+                        </div>
+                        <p>
+                            Copyright  2022 Drawpix Interactive Inc. Drawpix Interactive™ <br>
+                            and the Drawpix Interactive logo are trademarks of Drawpix <br>
+                            Interactive Inc. All Rights Reserved.
+                        </p>
+                    </li>
+                    
+
+                    <li>
+                       <h1>Контакты</h1>
+                        <p id="sss">hello@drawpix.ru</p>
+                        <div class="icons">
+                            <a href="https://instagram.com/drawpix.ru"><img class="ico" src="images/Vector(1).svg" alt="instagram"></a>
+                            <a href="https://vk.com/drawpix" ><img class="ico" src="images/Vector(3).svg" alt="vk"></a>
+                        </div> 
+                    </li>
+                    
+                </div>
+
+        </div>
+
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
